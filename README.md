@@ -1,4 +1,4 @@
-# Equal-Weight Portfolio vs. S&P 500 — Backtest Analysis
+# Equal-Weight Portfolio vs. S&P 500: Backtest Analysis
 
 A Python backtest comparing a simple equal-weighted 5-stock portfolio against
 the S&P 500 over the past 3 years, using real historical market data.
@@ -32,14 +32,15 @@ return (Sharpe ratio). Worth noting from the chart: the S&P 500 was
 actually ahead for roughly the first two years; the portfolio only pulled
 decisively ahead in the final stretch. These numbers will change whenever
 the script is re-run, since it's always pulling the latest 3 years of data.
+  
+   ![Growth of $1: Portfolio vs. S&P 500](portfolio_vs_sp500.png)
 
 ## Project structure
 
 ```
 finance-portfolio-analysis/
 ├── fetch_data.py          # main script — run this
-├── output/
-│   └── portfolio_vs_sp500.png
+├── portfolio_vs_sp500.png
 ├── requirements.txt
 └── README.md
 ```
@@ -61,7 +62,7 @@ python3 fetch_data.py
 Requires an internet connection (it pulls live data from Yahoo Finance via
 `yfinance` every time it runs).
 
-## ⚠️ Important caveats — this is a backtest, not a prediction
+## Important caveats — this is a backtest, not a prediction
 
 - This is a **backtest**: it shows how this specific portfolio *would have*
   performed historically. It says nothing about future performance.
